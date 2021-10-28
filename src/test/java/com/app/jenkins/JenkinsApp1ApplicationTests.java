@@ -13,6 +13,7 @@ class JenkinsApp1ApplicationTests {
 	@Test
 	void contextLoads() {
 		logger.info("test executed..");
+		logger.info("test executed 2nd time..");
 	assertEquals("hello","hello");
 	}
 
