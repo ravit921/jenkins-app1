@@ -30,7 +30,8 @@ public class JenkinsApp1Application {
 	@Bean
 	public CommandLineRunner cr() {
 		return (args)-> {
-			logger.info("command line runner executed...");
+			logger.info("command line runner updated and executed...");
+			System.out.println("hello world..");
 		};
 	}
 }
