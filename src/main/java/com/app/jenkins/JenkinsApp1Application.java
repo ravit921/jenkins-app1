@@ -23,11 +23,13 @@ public class JenkinsApp1Application {
 		logger.info("application started....");
 		System.out.println("appplication started sop...");
 		SpringApplication.run(JenkinsApp1Application.class, args);
+		logger.info("**application started....");
+		System.out.println("**appplication started sop...");
 	}
 	
 	@Bean
 	public CommandLineRunner cr() {
-		return ()-> {
+		return (args)-> {
 			logger.info("command line runner executed...");
 		};
 	}
